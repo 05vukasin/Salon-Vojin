@@ -455,6 +455,7 @@ a {
   width: 100%;
 }
 
+
 body.nav-active .nav__content {
   visibility: visible;
 }
@@ -597,6 +598,12 @@ body.nav-active .nav__list-item:nth-child(10) {
 
   #billboard figure figcaption {
     position: relative;
+  }
+}
+@media screen and (max-width: 550px) {
+  #billboard .text-content .display-1 {
+    font-size: 50px;
+   
   }
 }
 
