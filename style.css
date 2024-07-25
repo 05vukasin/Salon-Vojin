@@ -620,7 +620,7 @@ body.nav-active .nav__list-item:nth-child(10) {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-right:10px;
+  padding-right: 70px;
 }
 
 .cenovnik h1 {
