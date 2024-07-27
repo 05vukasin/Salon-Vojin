@@ -10,6 +10,7 @@
 	<meta name="author" content="author">
 	<meta name="keywords" content="keywords">
 	<meta name="description" content="description">
+	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -185,11 +186,11 @@
                 <span class="phone">Nazovite nas:</span><div><i class="fa-solid fa-phone"></i> +381 63 8989 748</div>
             </div>
             <div class="email-forma">
-                <input type="text" placeholder="Ime i Prezime">
-                <input type="email" placeholder="Email">
-                <input type="phone" placeholder="Telefon">
-                <textarea placeholder="Poruka"></textarea>
-                <button class="send-btn">Pošalji</button>
+                <input type="text" id="name" placeholder="Ime i Prezime">
+                <input type="email" id="email" placeholder="Email">
+                <input type="tel" id="phone" placeholder="Telefon">
+                <textarea id="message" placeholder="Poruka"></textarea>
+                <button class="send-btn" onclick="sendEmail()">Pošalji</button>
             </div>
         </div>
     </section>
@@ -202,7 +203,7 @@
 				
 				
 					<ul class="list-unstyled">
-						<li><a href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a></li>
+						<li><a href="mailto:contact@yourwebsite.com">vojinsalon@gmail.com</a></li>
 						<li>063/8989 748</li>
 						<li>Koste Abraševića 39/L3, Belgrade, Serbia 11050</li>
 						
@@ -263,7 +264,27 @@
 
 		</div>
 	</footer>
+	<script type="text/javascript">
+        (function() {
+            emailjs.init("MMNlSWtzgi-mK2FEl"); // Replace 'YOUR_USER_ID' with your actual user ID from EmailJS
+        })();
 
+        function sendEmail() {
+            const serviceID = 'service_y9h54vf'; // Replace 'YOUR_SERVICE_ID' with your actual service ID from EmailJS
+            const templateID = 'template_aoxcysw'; // Replace 'YOUR_TEMPLATE_ID' with your actual template ID from EmailJS
+
+            const templateParams = {
+                message: `Ime i Prezime: ${document.getElementById('name').value}\nEmail: ${document.getElementById('email').value}\nTelefon: ${document.getElementById('phone').value}\nPoruka: ${document.getElementById('message').value}`
+            };
+
+            emailjs.send(serviceID, templateID, templateParams)
+                .then((response) => {
+                    alert('Poruka uspešno poslata!', response.status, response.text);
+                }, (error) => {
+                    alert('Došlo je do greške prilikom slanja poruke.', error);
+                });
+        }
+    </script>
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
