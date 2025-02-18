@@ -23,6 +23,16 @@
 		href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
 		rel="stylesheet">
 
+
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PH5J3C3P58"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PH5J3C3P58');
+</script>
 </head>
 
 <body>
@@ -181,25 +191,60 @@
 		</label>
 	</nav>
 
-	<section id="billboard" class="py-1 py-md-5">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-md-4">
-					<div class="text-content mt-5" data-aos="fade-in">
-						<h1 class="display-1 text-uppercase">Savršeno Iskustvo Ulepšavanja</h1>
-						<a href="#welcome" class="btn btn-dark px-5 py-3">Saznajte više</a>
-					</div>
-				</div>
-				<div class="col-md-8">
-					<figure class="position-relative">
-						<img  src="images/banner-1.jpg" class="img-fluid" alt="beauty salon">
-						<figcaption class="bg-white p-1 m-1 p-md-5 m-md-5 col-md-5">
-							Naš salon lepote na Zvezdari nudi vrhunske tretmane lica, depilaciju, lash and brow lift i mnoge druge usluge. Prepustite se stručnim rukama našeg tima i doživite pravu transformaciju. Naši tretmani su osmišljeni tako da istaknu vašu prirodnu lepotu i pruže vam osećaj svežine i samopouzdanja.
-						</figcaption>
-					</figure>
-				</div>
+	<section id="billboard" class="py-1 py-md-5" >
+		<div class="container mt-5">
+			<!-- Veliki naslov iznad kartica -->
+			<div class="text-center mb-4">
+			  <h1>Salon Vojin</h1>
+			  <h2>Specijalna ponuda</h2>
 			</div>
-		</div>
+		  
+			<div class="card-container d-flex justify-content-between">
+			  <!-- Prva kartica -->
+			  <div class="card-item">
+				<img src="images/card-1.jpg" alt="Blistav pogled" class="card-img">
+				<h2 class="card-title">BLISTAV POGLED</h2>
+				<hr>
+				<h3 class="card-price">1.200 rsd</h3>
+				<p class="card-description">Ako želite da osvežite i poboljšate tonus kože oko očiju, ovaj tretman je za vas.</p>
+				<ul class="card-list">
+				  <li>Radiotalasni lifting</li>
+				  <li>Maska</li>
+				  <li>Serum</li>
+				  <li>Krema</li>
+				</ul>
+			  </div>
+			  <!-- Druga kartica (šira) -->
+			  <div class="card-item wide-card">
+				<img src="images/card-2.jfif" alt="Deluxe Detox" class="card-img">
+				<h2 class="card-title">DELUXE DETOX</h2>
+				<hr>
+				<h3 class="card-price">3.500 rsd</h3>
+				<p class="card-description">Ako želite da zategnete i podignete opuštenu kožu lica i umanjite znakove starenja, a ne želite invazivne procedure.</p>
+				<ul class="card-list">
+				  <li>Radiotalasni lifting</li>
+				  <li>Detox maska</li>
+				  <li>Serum</li>
+				  <li>Krema</li>
+				</ul>
+			  </div>
+			  <!-- Treća kartica -->
+			  <div class="card-item">
+				<img src="images/card-3.jfif" alt="Black Doll" class="card-img">
+				<h2 class="card-title">BLACK DOLL</h2>
+				<hr>
+				<h3 class="card-price">4.000 rsd</h3>
+				<p class="card-description">Ako želite glatku, čistu i zategnutu kožu i ujednačen ten.</p>
+				<ul class="card-list">
+				  <li>Karbon laserski piling</li>
+				  <li>Maska za lice</li>
+				  <li>Serum</li>
+				  <li>Krema</li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  
 	</section>
 	
 
@@ -342,8 +387,13 @@
 							<svg class="text-primary" width="24" height="24" viewBox="0 0 24 24">
 								<use xlink:href="#quote"></use>
 							</svg>
-							<p class="fs-5">“Nudimo specijalne tretmane za sve tipove kože koji su prilagođeni vašim potrebama. Naša stručnost u nezi lica i tela osigurava da se osećate osveženo i negovano svaki put.”</p>
-							<div class="review-title"><strong>Stručni Tim</strong></div>
+							<p class="fs-5">Više od 20. godina nudimo najkvalitetnije kozmetičke tretmane !<br>
+								* KLASIČAN TRETMAN LICA<br>
+								* MEZOPORACIJA<br>
+								* RADIOTALASNI LIFTING<br>
+								* KARBONSKI PILING<br>
+								* DERMA PEN</p>
+							<!-- <div class="review-title"><strong>Stručni Tim</strong></div> -->
 							<div class="review-desc text-muted">Salon Lepote Vojin</div>
 						</blockquote>
 					</div>
@@ -386,26 +436,47 @@
 						<div class="meta-tags text-uppercase text-gray d-flex gap-2 fs-6 mb-2 align-items-center">
 							<span class="meta-category"><a href="#">Novosti</a></span>
 						</div>
-						<h3 class="post-title mb-2"><a href="single-blog.html">Novi tretmani lica</a></h3>
-						<p>U našem salonu sada nudimo najnovije tretmane lica koji koriste naprednu tehnologiju za poboljšanje vašeg tena. Posetite nas i saznajte više o ovim inovativnim metodama.</p>
+						<h3 class="post-title mb-2"><a href="single-blog.html">Lečenje gljivica na noktima laserom</a></h3>
+						<p>Lečenje gljivica na noktima laserom je efikasna opcija za one koji žele brže i manje invazivno rešenje. Evo nekoliko saveta za ovaj tretman:</p>
+						<ul>
+							<li>Odaberite profesionalan tretman: Posetite stručni salon ili ordinaciju sa iskustvom u laserskoj terapiji, poput salona Vojin. Koristimo specijalizovanu opremu koja je bezbedna i efikasna.</li>
+							<li>Više tretmana: Obično je potrebno nekoliko tretmana (6-8) u određenom vremenskom razmaku, zavisno od stadijuma infekcije i vrste gljivica. Stručnjak će vam dati personalizovani plan tretmana.</li>
+							<li>Redovno održavanje higijene: Nakon tretmana, važno je pridržavati se saveta za higijenu kako biste sprečili povratak infekcije.</li>
+							<li>Izbegavajte deljenje obuće i pribora za nokte: Ovo može smanjiti rizik od ponovne infekcije i pomoći u očuvanju rezultata tretmana.</li>
+							<li>Pratite napredak: Efekti laserskog tretmana postaju vidljiviji tek kada nokat počne da raste, što može potrajati nekoliko meseci.</li>
+						</ul>
+						<p>Laserski tretman je relativno brz, bezbolan i pruža dugotrajne rezultate, naročito kada se kombinuje sa dobrom negom i preventivnim merama.</p>
 					</div>
 					<div class="post-thumbnail">
-						<img src="images/post-thumbnail-1.jpg" alt="Post" class="img-fluid">
+						<img src="images/post-thumbnail-1.jpg" alt="Lečenje gljivica laserom" class="img-fluid">
 					</div>
-				</div><!--post-item-->
+				</div>
+				<!--post-item-->
 	
 				<div class="col-md-4 pb-5">
 					<div class="post-thumbnail">
-						<img src="images/post-thumbnail-2.jpg" alt="Post" class="img-fluid">
+						<img src="images/post-thumbnail-2.jpg" alt="Saveti za obrve" class="img-fluid">
 					</div>
 					<div class="post-content mb-3">
 						<div class="meta-tags text-uppercase text-gray d-flex gap-2 fs-6 mb-2 mt-3 align-items-center">
 							<span class="meta-category"><a href="#">Saveti</a></span>
 						</div>
 						<h3 class="post-title mb-2"><a href="single-blog.html">Saveti za savršene obrve</a></h3>
-						<p>Da li znate kako da postignete savršene obrve? Naši stručnjaci dele najbolje savete i trikove za oblikovanje i negu obrva. Pročitajte naš blog za više informacija.</p>
+						<p>Salon Vojin savetuje:</p>
+						<ul>
+							<li><strong>Pronađite odgovarajući oblik:</strong> Oblik obrva treba da bude prilagođen vašem licu. Obrve s prirodnim lukom su često laskave, ali obratite pažnju na prirodnu liniju vaših obrva i oblik lica.</li>
+							<li><strong>Koristite kvalitetne proizvode za popunjavanje:</strong> Olovke, senke i gelovi za obrve pomažu da popunite praznine i definišete oblik. Izaberite nijansu koja je za ton svetlija od vaše prirodne boje, što će izgledati prirodnije.</li>
+							<li><strong>Češljanje obrva:</strong> Koristite četkicu za obrve kako biste ih oblikovali i uredili. Češljanje pomaže da dlačice leže pravilno, otkrivajući prirodne konture obrva.</li>
+							<li><strong>Redovno čupkanje i šišanje:</strong> Čupkanje dlačica van linije obrva pomaže u održavanju oblika, dok se šišanje može koristiti za duže dlačice koje izlaze iz linije.</li>
+							<li><strong>Koristite gel za obrve:</strong> Prozirni ili tonirani gel drži obrve na mestu, dajući im uredan izgled tokom celog dana.</li>
+							<li><strong>Osvetljenje lukova obrva:</strong> Za dodatnu definiciju, nanesite malo hajlajtera ispod luka obrva. Ovo otvara pogled i daje obrvama precizan, čist izgled.</li>
+							<li><strong>Izbegavajte preterano čupanje:</strong> Prečesto čupanje može oslabiti dlačice i dovesti do proređivanja obrva. Pratite prirodni oblik i trudite se da ne uklanjate previše dlačica.</li>
+							<li><strong>Profesionalna pomoć za oblikovanje:</strong> Razmotrite tretman kod profesionalca ako želite dugotrajan i precizno oblikovan izgled obrva, kao što su oblikovanje koncem, voskom ili tretmani kao što je mikroblejding za trajnu definiciju.</li>
+						</ul>
+						<p>Sa pravilnim negovanjem i minimalnim održavanjem, obrve mogu doprineti celokupnom izrazu lica, čineći ga otvorenijim i naglašenijim.</p>
 					</div>
-				</div><!--post-item-->
+				</div>
+				<!--post-item-->
 	
 				<div class="col-md-4 pb-5">
 					<div class="post-content mb-3">
@@ -452,7 +523,7 @@
 				
 				
 					<ul class="list-unstyled">
-						<li><a href="mailto:contact@yourwebsite.com">vojinsalon@gmail.com</a></li>
+						<li><a href="mailto:contact@yourwebsite.com">salon.vojin@gmail.com</a></li>
 						<li>063/8989 748</li>
 						<li>Koste Abraševića 39/L3, Belgrade, Serbia 11050</li>
 						

@@ -608,6 +608,194 @@ body.nav-active .nav__list-item:nth-child(10) {
 }
 
 /* ----Cenovnik------------------------------------------------- */
+/* Stil za naslove */
+.text-center h1, .text-center h2 {
+  font-family: 'Georgia', serif; /* Sličan font kao na slici */
+  color: #6E7648; /* Boja teksta kao na slici */
+}
+
+.text-center h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.text-center h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+/* Stil za naslove */
+.text-center h1, .text-center h2 {
+  font-family: 'Georgia', serif;
+  color: #6E7648;
+}
+
+.text-center h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.text-center h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+/* Stilovi za kartice */
+.card-container {
+  display: flex;
+  gap: 3px;
+  justify-content: space-between;
+}
+
+.card-item {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.wide-card {
+  max-width: 450px; /* Srednja kartica šira */
+}
+
+.card-img {
+  border-radius: 15px;
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-family: 'Georgia', serif;
+  font-size: 1.6rem;
+  color: #6E7648;
+}
+
+.card-price {
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  margin: 15px 0;
+  color: #000;
+}
+
+.card-description {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.card-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+  color: #333;
+}
+
+/* Zaobljene ivice kartica */
+.card-item hr {
+  border: none;
+  border-top: 2px solid #6E7648;
+  width: 80%;
+  margin: 10px auto;
+}
+
+/* Media Query za manju širinu ekrana */
+@media (max-width: 768px) {
+  /* Smanjivanje veličina kartica */
+  .card-container {
+    justify-content: space-between;
+  }
+
+  .card-item {
+    max-width: 150px;
+  }
+
+  .wide-card {
+    max-width: 250px;
+  }
+
+  .card-img{
+    height: 150px;
+  }
+  /* Smanjivanje veličine slova u karticama */
+  .card-title {
+    font-size: 1.2rem; /* Manji naslov kartice */
+  }
+
+  .card-price {
+    font-size: 1.5rem; /* Manja cena */
+  }
+
+  .card-description {
+    font-size: 0.7rem; /* Manji opis */
+  }
+
+  .card-list li {
+    font-size: 0.7rem; /* Manje stavke liste */
+  }
+
+  /* Smanjivanje veličine naslova iznad kartica */
+  .text-center h1 {
+    font-size: 2rem; /* Manji glavni naslov */
+  }
+
+  .text-center h2 {
+    font-size: 1.5rem; /* Manji podnaslov */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Smanjivanje veličina kartica */
+  
+
+  .card-item {
+    max-width: 30%; /* Kartice zauzimaju 90% širine ekrana */
+    margin-bottom: 20px; /* Razmak između kartica */
+    padding: 10px; /* Smanjen padding unutar kartica */
+  }
+
+  .wide-card {
+    max-width: 35%; /* Šira kartica prilagođena manjem ekranu */
+  }
+
+  .card-img {
+    height: 100px; /* Još manja visina slike */
+    max-width: 100%; /* Slika prilagođena širini kartice */
+  }
+
+  /* Smanjivanje veličine slova u karticama */
+  .card-title {
+    font-size: 0.8rem; /* Još manji naslov kartice */
+  }
+
+  .card-price {
+    font-size: 1.1rem; /* Još manja cena */
+  }
+
+  .card-description {
+    font-size: 0.5rem; /* Manji opis */
+  }
+
+  .card-list li {
+    font-size: 0.5rem; /* Manje stavke liste */
+  }
+
+  /* Smanjivanje veličine naslova iznad kartica */
+  .text-center h1 {
+    font-size: 1.2rem; /* Manji glavni naslov */
+  }
+
+  .text-center h2 {
+    font-size: 1.0rem; /* Manji podnaslov */
+  }
+}
+
 
 
 .cenovnik {
