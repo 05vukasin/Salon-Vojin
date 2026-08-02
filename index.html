@@ -1,639 +1,476 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="sr">
 <head>
-
 	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7VV16MZY80"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-  
-	gtag('config', 'G-7VV16MZY80');
-  </script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7VV16MZY80"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-7VV16MZY80');
+	</script>
 
-	<title>Salon Vojin</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="format-detection" content="telephone=no">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="author" content="author">
-	<meta name="keywords" content="keywords">
-	<meta name="description" content="description">
-
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/vendor.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Salon Vojin — Salon lepote u centru Beograda</title>
+	<meta name="description" content="Salon Vojin — salon lepote sa preko 20 godina iskustva. Tretmani lica, lasersko uklanjanje tetovaža, manikir, pedikir i depilacija u centru Beograda.">
+	<meta name="keywords" content="salon lepote, Beograd, tretmani lica, dermapen, lasersko uklanjanje tetovaza, manikir, pedikir, depilacija">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-		rel="stylesheet">
-
-
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="stylesheet" href="css/salon.css">
 </head>
 
-
-
-
 <body>
-	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+	<!-- =====================================================================
+	     Icon sprite — SVG path data sourced from React icon libraries
+	     (lucide-react, MIT) unless noted. Referenced via <use href="#id">.
+	     ===================================================================== -->
+	<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
 		<defs>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="instagram" viewBox="0 0 15 15">
-				<path fill="none" stroke="currentColor"
-					d="M11 3.5h1M4.5.5h6a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4h-6a4 4 0 0 1-4-4v-6a4 4 0 0 1 4-4Zm3 10a3 3 0 1 1 0-6a3 3 0 0 1 0 6Z" />
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="facebook" viewBox="0 0 15 15">
-				<path fill="none" stroke="currentColor"
-					d="M7.5 14.5a7 7 0 1 1 0-14a7 7 0 0 1 0 14Zm0 0v-8a2 2 0 0 1 2-2h.5m-5 4h5" />
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="twitter" viewBox="0 0 15 15">
-				<path fill="currentColor"
-					d="m14.478 1.5l.5-.033a.5.5 0 0 0-.871-.301l.371.334Zm-.498 2.959a.5.5 0 1 0-1 0h1Zm-6.49.082h-.5h.5Zm0 .959h.5h-.5Zm-6.99 7V12a.5.5 0 0 0-.278.916L.5 12.5Zm.998-11l.469-.175a.5.5 0 0 0-.916-.048l.447.223Zm3.994 9l.354.353a.5.5 0 0 0-.195-.827l-.159.474Zm7.224-8.027l-.37.336l.18.199l.265-.04l-.075-.495Zm1.264-.94c.051.778.003 1.25-.123 1.606c-.122.345-.336.629-.723 1l.692.722c.438-.42.776-.832.974-1.388c.193-.546.232-1.178.177-2.006l-.998.066Zm0 3.654V4.46h-1v.728h1Zm-6.99-.646V5.5h1v-.959h-1Zm0 .959V6h1v-.5h-1ZM10.525 1a3.539 3.539 0 0 0-3.537 3.541h1A2.539 2.539 0 0 1 10.526 2V1Zm2.454 4.187C12.98 9.503 9.487 13 5.18 13v1c4.86 0 8.8-3.946 8.8-8.813h-1ZM1.03 1.675C1.574 3.127 3.614 6 7.49 6V5C4.174 5 2.421 2.54 1.966 1.325l-.937.35Zm.021-.398C.004 3.373-.157 5.407.604 7.139c.759 1.727 2.392 3.055 4.73 3.835l.317-.948c-2.155-.72-3.518-1.892-4.132-3.29c-.612-1.393-.523-3.11.427-5.013l-.895-.446Zm4.087 8.87C4.536 10.75 2.726 12 .5 12v1c2.566 0 4.617-1.416 5.346-2.147l-.708-.706Zm7.949-8.009A3.445 3.445 0 0 0 10.526 1v1c.721 0 1.37.311 1.82.809l.74-.671Zm-.296.83a3.513 3.513 0 0 0 2.06-1.134l-.744-.668a2.514 2.514 0 0 1-1.466.813l.15.989ZM.222 12.916C1.863 14.01 3.583 14 5.18 14v-1c-1.63 0-3.048-.011-4.402-.916l-.556.832Z" />
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="pinterest" viewBox="0 0 15 15">
-				<path fill="none" stroke="currentColor"
-					d="m4.5 13.5l3-7m-3.236 3a2.989 2.989 0 0 1-.764-2V7A3.5 3.5 0 0 1 7 3.5h1A3.5 3.5 0 0 1 11.5 7v.5a3 3 0 0 1-3 3a2.081 2.081 0 0 1-1.974-1.423L6.5 9m1 5.5a7 7 0 1 1 0-14a7 7 0 0 1 0 14Z" />
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="youtube" viewBox="0 0 15 15">
-				<path fill="currentColor"
-					d="m1.61 12.738l-.104.489l.105-.489Zm11.78 0l.104.489l-.105-.489Zm0-10.476l.104-.489l-.105.489Zm-11.78 0l.106.489l-.105-.489ZM6.5 5.5l.277-.416A.5.5 0 0 0 6 5.5h.5Zm0 4H6a.5.5 0 0 0 .777.416L6.5 9.5Zm3-2l.277.416a.5.5 0 0 0 0-.832L9.5 7.5ZM0 3.636v7.728h1V3.636H0Zm15 7.728V3.636h-1v7.728h1ZM1.506 13.227c3.951.847 8.037.847 11.988 0l-.21-.978a27.605 27.605 0 0 1-11.568 0l-.21.978ZM13.494 1.773a28.606 28.606 0 0 0-11.988 0l.21.978a27.607 27.607 0 0 1 11.568 0l.21-.978ZM15 3.636c0-.898-.628-1.675-1.506-1.863l-.21.978c.418.09.716.458.716.885h1Zm-1 7.728a.905.905 0 0 1-.716.885l.21.978A1.905 1.905 0 0 0 15 11.364h-1Zm-14 0c0 .898.628 1.675 1.506 1.863l.21-.978A.905.905 0 0 1 1 11.364H0Zm1-7.728c0-.427.298-.796.716-.885l-.21-.978A1.905 1.905 0 0 0 0 3.636h1ZM6 5.5v4h1v-4H6Zm.777 4.416l3-2l-.554-.832l-3 2l.554.832Zm3-2.832l-3-2l-.554.832l3 2l.554-.832Z" />
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="dribble" viewBox="0 0 15 15">
-				<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-					d="M4.839 1.024c3.346 4.041 5.096 7.922 5.704 12.782M.533 6.82c5.985-.138 9.402-1.083 11.97-4.216M2.7 12.594c3.221-4.902 7.171-5.65 11.755-4.293M14.5 7.5a7 7 0 1 0-14 0a7 7 0 0 0 14 0Z" />
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="calendar" viewBox="0 0 24 24">
-				<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-					<rect width="20" height="18" x="2" y="4" rx="4" />
-					<path d="M8 2v4m8-4v4M2 10h20" />
-				</g>
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="shopping-bag" viewBox="0 0 24 24">
-				<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-					<path
-						d="M3.977 9.84A2 2 0 0 1 5.971 8h12.058a2 2 0 0 1 1.994 1.84l.803 10A2 2 0 0 1 18.833 22H5.167a2 2 0 0 1-1.993-2.16l.803-10Z" />
-					<path d="M16 11V6a4 4 0 0 0-4-4v0a4 4 0 0 0-4 4v5" />
-				</g>
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="gift" viewBox="0 0 24 24">
-				<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-					<rect width="18" height="14" x="3" y="8" rx="2" />
-					<path d="M12 5a3 3 0 1 0-3 3m6 0a3 3 0 1 0-3-3m0 0v17m9-7H3" />
-				</g>
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="arrow-cycle" viewBox="0 0 24 24">
-				<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-					<path
-						d="M22 12c0 6-4.39 10-9.806 10C7.792 22 4.24 19.665 3 16m-1-4C2 6 6.39 2 11.806 2C16.209 2 19.76 4.335 21 8" />
-					<path d="m7 17l-4-1l-1 4M17 7l4 1l1-4" />
-				</g>
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="link" viewBox="0 0 24 24">
-				<path fill="currentColor"
-					d="M12 19a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0-4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm-5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm7-12h-1V2a1 1 0 0 0-2 0v1H8V2a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 17a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9h16Zm0-11H4V6a1 1 0 0 1 1-1h1v1a1 1 0 0 0 2 0V5h8v1a1 1 0 0 0 2 0V5h1a1 1 0 0 1 1 1ZM7 15a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0 4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Z" />
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="arrow-left" viewBox="0 0 24 24">
-				<path fill="currentColor"
-					d="M17 11H9.41l3.3-3.29a1 1 0 1 0-1.42-1.42l-5 5a1 1 0 0 0-.21.33a1 1 0 0 0 0 .76a1 1 0 0 0 .21.33l5 5a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42L9.41 13H17a1 1 0 0 0 0-2Z" />
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="arrow-right" viewBox="0 0 24 24">
-				<path fill="currentColor"
-					d="M17.92 11.62a1 1 0 0 0-.21-.33l-5-5a1 1 0 0 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l5-5a1 1 0 0 0 .21-.33a1 1 0 0 0 0-.76Z" />
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="play" viewBox="0 0 24 24">
-				<g fill="none" fill-rule="evenodd">
-					<path
-						d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z" />
-					<path fill="currentColor"
-						d="M5.669 4.76a1.469 1.469 0 0 1 2.04-1.177c1.062.454 3.442 1.533 6.462 3.276c3.021 1.744 5.146 3.267 6.069 3.958c.788.591.79 1.763.001 2.356c-.914.687-3.013 2.19-6.07 3.956c-3.06 1.766-5.412 2.832-6.464 3.28c-.906.387-1.92-.2-2.038-1.177c-.138-1.142-.396-3.735-.396-7.237c0-3.5.257-6.092.396-7.235Z" />
-				</g>
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="category" viewBox="0 0 24 24">
-				<path fill="currentColor"
-					d="M19 5.5h-6.28l-.32-1a3 3 0 0 0-2.84-2H5a3 3 0 0 0-3 3v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-10a3 3 0 0 0-3-3Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-13a1 1 0 0 1 1-1h4.56a1 1 0 0 1 .95.68l.54 1.64a1 1 0 0 0 .95.68h7a1 1 0 0 1 1 1Z" />
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="calendar" viewBox="0 0 24 24">
-				<path fill="currentColor"
-					d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z" />
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="heart" viewBox="0 0 24 24">
-				<path fill="currentColor"
-					d="M20.16 4.61A6.27 6.27 0 0 0 12 4a6.27 6.27 0 0 0-8.16 9.48l7.45 7.45a1 1 0 0 0 1.42 0l7.45-7.45a6.27 6.27 0 0 0 0-8.87Zm-1.41 7.46L12 18.81l-6.75-6.74a4.28 4.28 0 0 1 3-7.3a4.25 4.25 0 0 1 3 1.25a1 1 0 0 0 1.42 0a4.27 4.27 0 0 1 6 6.05Z" />
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="plus" viewBox="0 0 24 24">
-				<path fill="currentColor"
-					d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z" />
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="minus" viewBox="0 0 24 24">
-				<path fill="currentColor" d="M19 11H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2Z" />
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="cart" viewBox="0 0 24 24">
-				<path fill="currentColor"
-					d="M8.5 19a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 8.5 19ZM19 16H7a1 1 0 0 1 0-2h8.491a3.013 3.013 0 0 0 2.885-2.176l1.585-5.55A1 1 0 0 0 19 5H6.74a3.007 3.007 0 0 0-2.82-2H3a1 1 0 0 0 0 2h.921a1.005 1.005 0 0 1 .962.725l.155.545v.005l1.641 5.742A3 3 0 0 0 7 18h12a1 1 0 0 0 0-2Zm-1.326-9l-1.22 4.274a1.005 1.005 0 0 1-.963.726H8.754l-.255-.892L7.326 7ZM16.5 19a1.5 1.5 0 1 0 1.5 1.5a1.5 1.5 0 0 0-1.5-1.5Z" />
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="check" viewBox="0 0 24 24">
-				<path fill="currentColor"
-					d="M18.71 7.21a1 1 0 0 0-1.42 0l-7.45 7.46l-3.13-3.14A1 1 0 1 0 5.29 13l3.84 3.84a1 1 0 0 0 1.42 0l8.16-8.16a1 1 0 0 0 0-1.47Z" />
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="trash" viewBox="0 0 24 24">
-				<path fill="currentColor"
-					d="M10 18a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1ZM20 6h-4V5a3 3 0 0 0-3-3h-2a3 3 0 0 0-3 3v1H4a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4Zm7 14a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8h10Zm-3-1a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1Z" />
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="star-outline" viewBox="0 0 15 15">
-				<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-					d="M7.5 9.804L5.337 11l.413-2.533L4 6.674l2.418-.37L7.5 4l1.082 2.304l2.418.37l-1.75 1.793L9.663 11L7.5 9.804Z" />
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="star-solid" viewBox="0 0 15 15">
-				<path fill="currentColor"
-					d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z" />
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="search" viewBox="0 0 24 24">
-				<path fill="currentColor"
-					d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="user" viewBox="0 0 24 24">
-				<path fill="currentColor"
-					d="M15.71 12.71a6 6 0 1 0-7.42 0a10 10 0 0 0-6.22 8.18a1 1 0 0 0 2 .22a8 8 0 0 1 15.9 0a1 1 0 0 0 1 .89h.11a1 1 0 0 0 .88-1.1a10 10 0 0 0-6.25-8.19ZM12 12a4 4 0 1 1 4-4a4 4 0 0 1-4 4Z" />
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="close" viewBox="0 0 15 15">
-				<path fill="currentColor"
-					d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z" />
-			</symbol>
-			<symbol xmlns="http://www.w3.org/2000/svg" id="quote" viewBox="0 0 448 512">
-				<path fill="currentColor" d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64h-64c-35.3 0-64-28.7-64-64V216z"/>
-			</symbol>
+			<!-- lucide-react: chevron-down -->
+			<symbol id="i-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+			<!-- lucide-react: phone -->
+			<symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+			<!-- lucide-react: instagram -->
+			<symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></symbol>
+			<!-- react-icons/fa: FaWhatsapp (Font Awesome, CC BY 4.0) -->
+			<symbol id="i-whatsapp" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.2-157zM223.9 439.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.5-186.6 184.5zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></symbol>
+			<!-- lucide-react: gem -->
+			<symbol id="i-gem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></symbol>
+			<!-- lucide-react: users -->
+			<symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+			<!-- lucide-react: shield-check -->
+			<symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+			<!-- lucide-react: star (filled) -->
+			<symbol id="i-star" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2.25l2.955 5.988 6.607.96-4.781 4.66 1.128 6.58L12 17.34l-5.909 3.107 1.128-6.58-4.781-4.66 6.607-.96z"/></symbol>
+			<!-- lucide-react: arrow-right -->
+			<symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+			<!-- lucide-react: calendar-days -->
+			<symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></symbol>
+			<!-- lucide-react: badge-check -->
+			<symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></symbol>
+			<!-- react-icons/fa: FaQuoteLeft (Font Awesome, CC BY 4.0) -->
+			<symbol id="i-quote" viewBox="0 0 448 512" fill="currentColor"><path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64h-64c-35.3 0-64-28.7-64-64V216z"/></symbol>
+			<!-- lucide-react: map-pin -->
+			<symbol id="i-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+			<!-- lucide-react: clock -->
+			<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+			<!-- lucide-react: mail -->
+			<symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+			<!-- lucide-react: menu -->
+			<symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></symbol>
+			<!-- lucide-react: x -->
+			<symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
 		</defs>
 	</svg>
 
-	<div class="nav nav-overlay">
-		<div class="nav__content">
-			<ul class="nav__list">
-				<li class="nav__list-item active-nav"><a href="index.html" class="hover-target"><span class="display-3">Početna</span></a></li>
-				<li class="nav__list-item"><a href="cenovnik.html" class="hover-target"><span class="display-3">Cenovnik</span> </a></li>
-				<li class="nav__list-item"><a href="kontakt.html" class="hover-target"><span class="display-3">Kontakt</span> </a></li>
-				
-			</ul>
-		</div>
-	</div>
-
-	<header id="header" class="mt-4">
-		<div class="container-fluid">
-			<a href="index.html" class="logo">
-				<img style="height:100px;width: auto; z-index: -2;" src="images/logo-vojin.jpg" alt="logo">
+	<!-- ===================== HEADER ===================== -->
+	<header class="site-header">
+		<div class="container header-inner">
+			<a href="index.html" class="brand" aria-label="Salon Vojin — početna">
+				<svg class="brand-mark" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+					<rect x="1.5" y="1.5" width="57" height="57" rx="15" stroke="#c3a35b" stroke-width="1.3"/>
+					<text x="30" y="39" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="29" font-weight="600" fill="#c3a35b" letter-spacing="1">SV</text>
+				</svg>
+				<span class="brand-text">
+					<span class="brand-name">SALON VOJIN</span>
+					<span class="brand-sub">Salon lepote</span>
+				</span>
 			</a>
+
+			<nav aria-label="Glavna navigacija">
+				<ul class="main-nav">
+					<li><a href="index.html">Početna</a></li>
+					<li><a href="#o-nama">O nama</a></li>
+					<li class="has-dropdown">
+						<a href="#usluge">Usluge <svg><use href="#i-chevron-down"></use></svg></a>
+						<ul class="dropdown">
+							<li><a href="cenovnik.html#tretmani-lica">Tretmani lica</a></li>
+							<li><a href="cenovnik.html#tetovaze">Lasersko uklanjanje tetovaža</a></li>
+							<li><a href="cenovnik.html#manikir">Manikir</a></li>
+							<li><a href="cenovnik.html#pedikir">Pedikir</a></li>
+							<li><a href="cenovnik.html#trepavice">Trepavice / obrve</a></li>
+							<li><a href="cenovnik.html#depilacija">Depilacija voskom</a></li>
+							<li><a href="cenovnik.html#telo">Tretmani tela</a></li>
+						</ul>
+					</li>
+					<li><a href="cenovnik.html">Cenovnik</a></li>
+					<li><a href="#rezultati">Rezultati</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+				</ul>
+			</nav>
+
+			<div class="header-cta">
+				<a href="kontakt.html" class="btn btn-gold">Zakaži termin <svg><use href="#i-calendar"></use></svg></a>
+				<button class="nav-toggle" aria-label="Otvori meni"><svg><use href="#i-menu"></use></svg></button>
+			</div>
 		</div>
 	</header>
 
-	<nav id="navbar" >
-		<input id="menu-toggle" type="checkbox" />
-		<label class="menu-btn"  for="menu-toggle">
-		<span></span>
-		</label>
-	</nav>
+	<!-- Mobile overlay nav -->
+	<div class="mobile-nav" aria-hidden="true">
+		<button class="mobile-close" aria-label="Zatvori meni"><svg><use href="#i-x"></use></svg></button>
+		<nav class="mobile-nav__inner" aria-label="Mobilna navigacija">
+			<ul class="mobile-nav__list">
+				<li><a href="index.html">Početna</a></li>
+				<li><a href="#o-nama">O nama</a></li>
+				<li><a href="#usluge">Usluge</a></li>
+				<li><a href="cenovnik.html">Cenovnik</a></li>
+				<li><a href="#rezultati">Rezultati</a></li>
+				<li><a href="kontakt.html">Kontakt</a></li>
+				<li><a href="kontakt.html" class="btn btn-gold mobile-cta">Zakaži termin <svg><use href="#i-calendar"></use></svg></a></li>
+			</ul>
+		</nav>
+	</div>
 
-	<section id="billboard" class="py-1 py-md-5" >
-		<div class="container mt-5">
-			<!-- Veliki naslov iznad kartica -->
-			<div class="text-center mb-4">
-			  <h1>Salon Vojin</h1>
-			  <h2>Specijalna ponuda</h2>
-			</div>
-		  
-			<div class="card-container d-flex justify-content-between">
-			  <!-- Prva kartica -->
-			  <div class="card-item">
-				<img src="images/card-1.jpg" alt="Blistav pogled" class="card-img">
-				<h2 class="card-title">BLISTAV POGLED</h2>
-				<hr>
-				<h3 class="card-price">1.200 rsd</h3>
-				<p class="card-description">Ako želite da osvežite i poboljšate tonus kože oko očiju, ovaj tretman je za vas.</p>
-				<ul class="card-list">
-				  <li>Radiotalasni lifting</li>
-				  <li>Maska</li>
-				  <li>Serum</li>
-				  <li>Krema</li>
-				</ul>
-			  </div>
-			  <!-- Druga kartica (šira) -->
-			  <div class="card-item wide-card">
-				<img src="images/card-2.jfif" alt="Deluxe Detox" class="card-img">
-				<h2 class="card-title">DELUXE DETOX</h2>
-				<hr>
-				<h3 class="card-price">3.500 rsd</h3>
-				<p class="card-description">Ako želite da zategnete i podignete opuštenu kožu lica i umanjite znakove starenja, a ne želite invazivne procedure.</p>
-				<ul class="card-list">
-				  <li>Radiotalasni lifting</li>
-				  <li>Detox maska</li>
-				  <li>Serum</li>
-				  <li>Krema</li>
-				</ul>
-			  </div>
-			  <!-- Treća kartica -->
-			  <div class="card-item">
-				<img src="images/card-3.jfif" alt="Black Doll" class="card-img">
-				<h2 class="card-title">BLACK DOLL</h2>
-				<hr>
-				<h3 class="card-price">4.000 rsd</h3>
-				<p class="card-description">Ako želite glatku, čistu i zategnutu kožu i ujednačen ten.</p>
-				<ul class="card-list">
-				  <li>Karbon laserski piling</li>
-				  <li>Maska za lice</li>
-				  <li>Serum</li>
-				  <li>Krema</li>
-				</ul>
-			  </div>
-			</div>
-		  </div>
-		  
-	</section>
-	
-
-	<section id="features" class="py-1 my-1 py-md-5 my-md-5" data-bs-theme="dark">
+	<!-- ===================== HERO ===================== -->
+	<section class="hero" id="pocetna">
+		<div class="hero-bg"><img src="images/hero-salon.jpg" alt="Salon Vojin — enterijer salona lepote"></div>
 		<div class="container">
-			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-5 m-2 m-md-0 p-2 p-md-5 bg-black">
-				<div class="col m-0">
-					<div class="mt-3">
-						<h4 class="fw-bold mb-2">Personalizovane kozmetičke konsultacije</h4>
-						<p class="text-white">U našem salonu, svaki klijent dobija individualno prilagođen pristup, kako bismo osigurali da se svaka vaša želja ispuni na najbolji mogući način. Naši stručnjaci su tu da vam pruže savete i preporuke za vaš tip kože i stil.</p>
-					</div>
-				</div>
-				<div class="col m-0">
-					<div class="mt-3">
-						<h4 class="fw-bold mb-2">Opuštajuća i osvežavajuća atmosfera</h4>
-						<p class="text-white">Uživajte u opuštajućem ambijentu našeg salona, gde se možete opustiti i obnoviti energiju. Naš prostor je dizajniran da vam pruži maksimalan komfor i užitak tokom svakog tretmana.</p>
-					</div>
-				</div>
-				<div class="col m-0">
-					<div class="mt-3">
-						<h4 class="fw-bold mb-2">Ekskluzivni proizvodi za lepotu</h4>
-						<p class="text-white">Koristimo samo najkvalitetnije proizvode za negu i lepotu, kako bismo vam pružili rezultate koji traju. Naša selekcija proizvoda je pažljivo odabrana da zadovolji sve vaše potrebe i očekivanja.</p>
-					</div>
+			<div class="hero-inner">
+				<span class="eyebrow">Lepota je način da budete najbolja verzija sebe</span>
+				<h1>Vaša lepota.<span class="line-2">Naša umetnost.</span></h1>
+				<p class="lead">Salon lepote sa preko 20 godina iskustva — tretmani lica, lasersko uklanjanje tetovaža, manikir, pedikir i depilacija u samom centru Beograda.</p>
+				<div class="hero-actions">
+					<a href="kontakt.html" class="btn btn-gold">Zakaži termin <svg><use href="#i-calendar"></use></svg></a>
+					<a href="#usluge" class="btn btn-outline">Pogledaj usluge <svg><use href="#i-arrow-right"></use></svg></a>
 				</div>
 			</div>
 		</div>
+		<div class="social-rail">
+			<a href="tel:+381638989748" aria-label="Pozovite nas"><svg><use href="#i-phone"></use></svg></a>
+			<a href="https://wa.me/381638989748" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-whatsapp"></use></svg></a>
+			<a href="https://www.instagram.com/salonvojin/" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-instagram"></use></svg></a>
+		</div>
 	</section>
-	
-	
 
-	<section id="welcome" class="welcome my-2 my-md-5">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 offset-md-3 text-center">
-					<h2>Stvaramo ličnije i jednostavnije iskustvo lepote za klijente i stručnjake.</h2>
-					<p>Naš cilj je da vam pružimo nezaboravno iskustvo koje kombinuje stručnost, kvalitet i pažnju prema detaljima. Bez obzira da li ste ovde zbog tretmana lica, depilacije ili lash and brow lift-a, naši stručnjaci su tu da vam pruže najbolje moguće rezultate. Opustite se i uživajte dok mi brinemo o vašoj lepoti.</p>
+	<!-- ===================== FEATURE BAR ===================== -->
+	<div class="container">
+		<div class="feature-bar">
+			<div class="feature-grid">
+				<div class="feature">
+					<div class="feature-icon"><svg><use href="#i-gem"></use></svg></div>
+					<h3>Vrhunski kvalitet</h3>
+					<p>Ekskluzivni proizvodi i sertifikovani aparati.</p>
+				</div>
+				<div class="feature">
+					<div class="feature-icon"><svg><use href="#i-users"></use></svg></div>
+					<h3>Stručan tim</h3>
+					<p>Preko 20 godina iskustva i stalne edukacije.</p>
+				</div>
+				<div class="feature">
+					<div class="feature-icon"><svg><use href="#i-shield"></use></svg></div>
+					<h3>Sigurnost</h3>
+					<p>Vaše zdravlje i zadovoljstvo su naš prioritet.</p>
+				</div>
+				<div class="feature">
+					<div class="feature-icon"><svg><use href="#i-star"></use></svg></div>
+					<h3>Personalizovan pristup</h3>
+					<p>Tretmani prilagođeni vašim potrebama.</p>
 				</div>
 			</div>
 		</div>
-	</section>
-	
+	</div>
 
-	<section id="about" class="personal-info py-2 py-md-5 overflow-hidden">
+	<!-- ===================== USLUGE ===================== -->
+	<section class="section services" id="usluge">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-7">
-					<figure data-aos="slide-right">
-						<img src="images/banner-2.jpg" class="img-fluid" alt="Beauty">
-					</figure>
+			<div class="section-head head-row">
+				<div>
+					<span class="eyebrow">Naše usluge</span>
+					<h2 class="section-title">Tretmani koji<br>pružaju rezultate</h2>
 				</div>
-				<div class="col-md-5">
-  <div class="m-2 p-2 m-md-5 p-md-5" data-aos="slide-left">
-    <h2 class="display-1 text-uppercase">Uklanjanje tetovaža laserom</h2>
-
-    <p>Tražite bezbedno i efikasno uklanjanje tetovaža laserom?</p>
-    <p><strong>Salon Vojin</strong> vam nudi laserski tretman uklanjanja tetovaža, idealan za one koji žele da uklone neželjene tetovaže na prirodan i postepen način.</p>
-
-    <h5 class="mt-4">Kako funkcioniše lasersko uklanjanje tetovaža?</h5>
-    <p>Naš laser nežno razlaže pigment u tetovaži, bez oštećenja okolne kože. Telo zatim prirodno eliminiše razgrađeni pigment, čime se tetovaža postepeno posvetljuje i nestaje. Tretmani se rade u više faza, sa razmakom od nekoliko nedelja, u zavisnosti od veličine i boje tetovaže.</p>
-
-    <h5 class="mt-4">Prednosti uklanjanja tetovaža u salonu Vojin:</h5>
-    <ul>
-      <li>Radimo sa savremenim laserom prilagođenim za estetske tretmane</li>
-      <li>Individualni pristup svakom klijentu</li>
-      <li>Pristupačne cene tretmana</li>
-      <li>Bez ožiljaka i hirurških zahvata</li>
-      <li>Lokacija u centru Beograda – lako dostupno</li>
-    </ul>
-
-    <h5 class="mt-4">Najčešća pitanja:</h5>
-
-    <p><strong>Koliko tretmana je potrebno?</strong><br>
-    U proseku je potrebno 5–10 tretmana, u zavisnosti od dubine tetovaže i pigmenta.</p>
-
-    <p><strong>Da li boli?</strong><br>
-    Osećaj je sličan blagom peckanju, ali se tretman brzo završava i dobro se podnosi.</p>
-
-    <p><strong>Koje tetovaže se najbolje uklanjaju?</strong><br>
-    Najbolji rezultati se postižu kod crnih i plavih tetovaža, kao i kod tetovaža starijih od godinu dana.</p>
-
-    <hr>
-
-    <p class="fw-bold fs-5">Uklonite tetovažu bez skalpela, ožiljaka i rizika.</p>
-    <p>Zakoračite u novo poglavlje bez neželjenih tetovaža.<br>
-    <strong>Zakažite svoj laserski tretman uklanjanja tetovaže u salonu Vojin već danas!</strong></p>
-
-    <p>Kontaktirajte nas putem sajta, društvenih mreža ili na broj <strong>060/0260378</strong></p>
-
-    <a href="kontakt.html" class="btn btn-dark px-5 py-3 mt-3">Zakažite sada</a>
-  </div>
-</div>
-
+				<a href="cenovnik.html" class="btn btn-dark">Pogledaj sve usluge <svg><use href="#i-arrow-right"></use></svg></a>
 			</div>
-		</div>
-	</section>
-	
 
-	<section id="services" class="personal-info py-2 py-md-5 overflow-hidden">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-5">
-					<div class="m-2 p-2 m-md-5 p-md-5" data-aos="slide-right">
-						<h2 class="display-1 text-uppercase">Nokti & Depilacija</h2>
-						<p>Naš salon nudi vrhunske usluge manikira i pedikira, kao i profesionalnu depilaciju za glatku i nežnu kožu. Bez obzira da li želite klasičan ili gel lak, ili tretman depilacije voskom, naši stručnjaci će se pobrinuti da dobijete najbolju moguću uslugu. Opustite se i uživajte u luksuznom tretmanu koji zaslužujete.</p>
-						<a href="kontakt.html" class="btn btn-dark px-5 py-3">Zakažite sada</a>
+			<div class="service-grid">
+				<article class="service-card">
+					<div class="service-media"><img src="images/service-lice.jpg" alt="Tretmani lica"></div>
+					<div class="service-body">
+						<h3>Tretmani lica</h3>
+						<p>Dermapen, karbonski piling, radiofrekventni lifting i nega kože.</p>
+						<div class="service-price">od 3.500 <span>rsd</span></div>
 					</div>
-				</div>
-				<div class="col-md-7">
-					<figure data-aos="slide-left">
-						<img src="images/banner-3.jpg" class="img-fluid" alt="Beauty">
-					</figure>
-				</div>
+				</article>
+				<article class="service-card">
+					<div class="service-media"><img src="images/service-tetovaza.jpg" alt="Lasersko uklanjanje tetovaža"></div>
+					<div class="service-body">
+						<h3>Uklanjanje tetovaža</h3>
+						<p>Bezbedno i postepeno lasersko uklanjanje bez ožiljaka.</p>
+						<div class="service-price">od 2.500 <span>rsd</span></div>
+					</div>
+				</article>
+				<article class="service-card">
+					<div class="service-media"><img src="images/service-nokti.jpg" alt="Manikir i pedikir"></div>
+					<div class="service-body">
+						<h3>Manikir &amp; Pedikir</h3>
+						<p>Klasičan i gel lak, medicinski manikir i pedikir.</p>
+						<div class="service-price">od 1.500 <span>rsd</span></div>
+					</div>
+				</article>
+				<article class="service-card">
+					<div class="service-media"><img src="images/service-depilacija.jpg" alt="Depilacija voskom"></div>
+					<div class="service-body">
+						<h3>Depilacija voskom</h3>
+						<p>Topli i hladni vosak za glatku i negovanu kožu.</p>
+						<div class="service-price">od 300 <span>rsd</span></div>
+					</div>
+				</article>
 			</div>
 		</div>
 	</section>
 
-	<section id="about" class="personal-info py-2 py-md-5 overflow-hidden">
+	<!-- ===================== PAKETI ===================== -->
+	<section class="section packages">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-7">
-					<figure data-aos="slide-right">
-						<img src="images/pedicure-1.jpg" class="img-fluid" alt="Beauty">
-					</figure>
-				</div>
-				<div class="col-md-5">
-					<div class="m-2 p-2 m-md-5 p-md-5" data-aos="slide-left">
-						<h2 class="display-1 text-uppercase"> Medicinski pedikir</h2>
-						<p>- Zakažite medicinski pedikir ako vam se pojavi neki od problema kao što su:
-							Urasli nokti, bradavice, kurje oči, žuljevi, zadebljanja i ragade na stopalima, gljivična oboljenja noktiju i stopala, povrede noktiju<br>
-							
-							- Lasersko uklanjanje gljivica s noktiju
-							
-							Jedna od najsavremenijih opcija lečenja gljivične infekcije noktiju je laserska terapija. Ovaj tretman je na potpuno neinvazivan i odmah se možete vratiti svakodnevnim aktivnostima. 
-							
-							Laserski tretman lečenja gljivica ruku/nogu funkcioniše tako što laserska svetlost prolazi kroz nokat i okolno tkivo.
-							Lasersku svetlost apsorbuje pigment u gljivicama, što uzrokuje njegovo zagrevanje, čime se ubija i oštećuje gljivica.</p>
-						<a href="kontakt.html" class="btn btn-dark px-5 py-3">Zakažite sada</a>
-					</div>
-				</div>
+			<div class="section-head center">
+				<span class="eyebrow">Specijalna ponuda</span>
+				<h2 class="section-title">Paketi po meri vaše lepote</h2>
 			</div>
-		</div>
-	</section>
-	
-
-	<section id="services" class="personal-info py-2 py-md-5 overflow-hidden">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-5">
-					<div class="m-2 p-2 m-md-5 p-md-5" data-aos="slide-right">
-						<h2 class="display-1 text-uppercase">Topla i hladna Depilacija</h2>
-						<p>Topla depilacija koristi zagrejan vosak koji se nanosi na kožu, hvata dlačice i uklanja ih zajedno s korenom, pružajući glatku kožu na duže vreme. Hladna depilacija koristi trake sa hladnim voskom koje se direktno primenjuju i povlače, jednostavnija je za upotrebu, ali može biti manje efikasna.</p>
-						<a href="kontakt.html" class="btn btn-dark px-5 py-3">Zakažite sada</a>
-					</div>
-				</div>
-				<div class="col-md-7">
-					<figure data-aos="slide-left">
-						<img src="images/coldwax.jpg" class="img-fluid" alt="Beauty">
-					</figure>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<section class="testimonials py-5">
-		<div class="container">
-			<div class="row">
-				<div class="section-header text-center my-5">
-					<h3 class="display-1 text-uppercase">Naša Ponuda</h3>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="testimonial-item">
-						<blockquote>
-							<svg class="text-primary" width="24" height="24" viewBox="0 0 24 24">
-								<use xlink:href="#quote"></use>
-							</svg>
-							<p class="fs-5">Više od 20. godina nudimo najkvalitetnije kozmetičke tretmane !<br>
-								* KLASIČAN TRETMAN LICA<br>
-								* MEZOPORACIJA<br>
-								* RADIOTALASNI LIFTING<br>
-								* KARBONSKI PILING<br>
-								* DERMA PEN</p>
-							<!-- <div class="review-title"><strong>Stručni Tim</strong></div> -->
-							<div class="review-desc text-muted">Salon Lepote Vojin</div>
-						</blockquote>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="testimonial-item">
-						<blockquote>
-							<svg class="text-primary" width="24" height="24" viewBox="0 0 24 24">
-								<use xlink:href="#quote"></use>
-							</svg>
-							<p class="fs-5">“Uživajte u našem širokom spektru usluga, uključujući depilaciju, podizanje trepavica i mnoge druge tretmane. Svaka usluga je pružena sa pažnjom na detalje i maksimalnom udobnošću.”</p>
-							<div class="review-title"><strong>Naša Ekipa</strong></div>
-							<div class="review-desc text-muted">Salon Lepote Vojin</div>
-						</blockquote>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="testimonial-item">
-						<blockquote>
-							<svg class="text-primary" width="24" height="24" viewBox="0 0 24 24">
-								<use xlink:href="#quote"></use>
-							</svg>
-							<p class="fs-5">“Naša filozofija je da vam pružimo personalizovanu uslugu koja će odgovarati vašim željama i potrebama. Posetite nas i otkrijte kako možemo unaprediti vašu lepotu i samopouzdanje.”</p>
-							<div class="review-title"><strong>Vaša Negovana Lepota</strong></div>
-							<div class="review-desc text-muted">Salon Lepote Vojin</div>
-						</blockquote>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-
-	<section id="blog" class="latest-blogs py-2 py-md-5">
-		<div class="container-fluid">
-	
-			<div class="row">
-				<div class="col-md-4 pb-5">
-					<div class="post-content mb-3">
-						<div class="meta-tags text-uppercase text-gray d-flex gap-2 fs-6 mb-2 align-items-center">
-							<span class="meta-category"><a href="#">Novosti</a></span>
-						</div>
-						<h3 class="post-title mb-2"><a href="single-blog.html">Lečenje gljivica na noktima laserom</a></h3>
-						<p>Lečenje gljivica na noktima laserom je efikasna opcija za one koji žele brže i manje invazivno rešenje. Evo nekoliko saveta za ovaj tretman:</p>
-						<ul>
-							<li>Odaberite profesionalan tretman: Posetite stručni salon ili ordinaciju sa iskustvom u laserskoj terapiji, poput salona Vojin. Koristimo specijalizovanu opremu koja je bezbedna i efikasna.</li>
-							<li>Više tretmana: Obično je potrebno nekoliko tretmana (6-8) u određenom vremenskom razmaku, zavisno od stadijuma infekcije i vrste gljivica. Stručnjak će vam dati personalizovani plan tretmana.</li>
-							<li>Redovno održavanje higijene: Nakon tretmana, važno je pridržavati se saveta za higijenu kako biste sprečili povratak infekcije.</li>
-							<li>Izbegavajte deljenje obuće i pribora za nokte: Ovo može smanjiti rizik od ponovne infekcije i pomoći u očuvanju rezultata tretmana.</li>
-							<li>Pratite napredak: Efekti laserskog tretmana postaju vidljiviji tek kada nokat počne da raste, što može potrajati nekoliko meseci.</li>
-						</ul>
-						<p>Laserski tretman je relativno brz, bezbolan i pruža dugotrajne rezultate, naročito kada se kombinuje sa dobrom negom i preventivnim merama.</p>
-					</div>
-					<div class="post-thumbnail">
-						<img src="images/post-thumbnail-1.jpg" alt="Lečenje gljivica laserom" class="img-fluid">
-					</div>
-				</div>
-				<!--post-item-->
-	
-				<div class="col-md-4 pb-5">
-					<div class="post-thumbnail">
-						<img src="images/post-thumbnail-2.jpg" alt="Saveti za obrve" class="img-fluid">
-					</div>
-					<div class="post-content mb-3">
-						<div class="meta-tags text-uppercase text-gray d-flex gap-2 fs-6 mb-2 mt-3 align-items-center">
-							<span class="meta-category"><a href="#">Saveti</a></span>
-						</div>
-						<h3 class="post-title mb-2"><a href="single-blog.html">Saveti za savršene obrve</a></h3>
-						<p>Salon Vojin savetuje:</p>
-						<ul>
-							<li><strong>Pronađite odgovarajući oblik:</strong> Oblik obrva treba da bude prilagođen vašem licu. Obrve s prirodnim lukom su često laskave, ali obratite pažnju na prirodnu liniju vaših obrva i oblik lica.</li>
-							<li><strong>Koristite kvalitetne proizvode za popunjavanje:</strong> Olovke, senke i gelovi za obrve pomažu da popunite praznine i definišete oblik. Izaberite nijansu koja je za ton svetlija od vaše prirodne boje, što će izgledati prirodnije.</li>
-							<li><strong>Češljanje obrva:</strong> Koristite četkicu za obrve kako biste ih oblikovali i uredili. Češljanje pomaže da dlačice leže pravilno, otkrivajući prirodne konture obrva.</li>
-							<li><strong>Redovno čupkanje i šišanje:</strong> Čupkanje dlačica van linije obrva pomaže u održavanju oblika, dok se šišanje može koristiti za duže dlačice koje izlaze iz linije.</li>
-							<li><strong>Koristite gel za obrve:</strong> Prozirni ili tonirani gel drži obrve na mestu, dajući im uredan izgled tokom celog dana.</li>
-							<li><strong>Osvetljenje lukova obrva:</strong> Za dodatnu definiciju, nanesite malo hajlajtera ispod luka obrva. Ovo otvara pogled i daje obrvama precizan, čist izgled.</li>
-							<li><strong>Izbegavajte preterano čupanje:</strong> Prečesto čupanje može oslabiti dlačice i dovesti do proređivanja obrva. Pratite prirodni oblik i trudite se da ne uklanjate previše dlačica.</li>
-							<li><strong>Profesionalna pomoć za oblikovanje:</strong> Razmotrite tretman kod profesionalca ako želite dugotrajan i precizno oblikovan izgled obrva, kao što su oblikovanje koncem, voskom ili tretmani kao što je mikroblejding za trajnu definiciju.</li>
-						</ul>
-						<p>Sa pravilnim negovanjem i minimalnim održavanjem, obrve mogu doprineti celokupnom izrazu lica, čineći ga otvorenijim i naglašenijim.</p>
-					</div>
-				</div>
-				<!--post-item-->
-	
-				<div class="col-md-4 pb-5">
-					<div class="post-content mb-3">
-						<div class="meta-tags text-uppercase text-gray d-flex gap-2 fs-6 mb-2 align-items-center">
-							<span class="meta-category"><a href="#">Preporuke</a></span>
-						</div>
-						<h3 class="post-title mb-2"><a href="single-blog.html">Top tretmani za glatku kožu</a></h3>
-						<p>Otkrijte najbolje tretmane za depilaciju i uživajte u glatkoj koži tokom cele godine. U našem salonu nudimo različite metode koje su bezbolne i efikasne.</p>
-					</div>
-					<div class="post-thumbnail">
-						<img src="images/post-thumbnail-3.jpg" alt="Post" class="img-fluid">
-					</div>
-				</div><!--post-item-->
-	
-			</div><!--post-content-->
-		
-		</div>
-	</section>
-	<section class="bg-secondary py-5">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 offset-md-2">
-					<div class="row">
-						<div class="col-md-8">
-							<h3>Rezervišite svoj termin danas</h3>
-							<p class="text-muted">Naš stručni tim je spreman da vam pruži vrhunske tretmane za negu lica, depilaciju i podizanje trepavica. Pridružite nam se i otkrijte svoje najbolje izdanje.</p>
-						</div>
-						<div class="col-md-4">
-							<a href="kontakt.html" class="btn btn-dark px-5 py-3">Rezervišite Sada</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-
-	<footer id="footer" class="bg-black pt-5" data-bs-theme="dark">
-		<div class="container">
-
-			
-				
-				
-				
-				
-					<ul class="list-unstyled">
-						<li><a href="mailto:contact@yourwebsite.com">salon.vojin@gmail.com</a></li>
-						<li>063/8989 748</li>
-						<li>Koste Abraševića 39/L3, Belgrade, Serbia 11050</li>
-						
+			<div class="package-grid">
+				<div class="package">
+					<h3>Blistav pogled</h3>
+					<div class="package-price">1.200 <small>rsd</small></div>
+					<p class="package-desc">Osvežite i poboljšajte tonus kože oko očiju za odmoran, blistav izgled.</p>
+					<ul class="package-list">
+						<li><svg><use href="#i-check"></use></svg> Radiotalasni lifting</li>
+						<li><svg><use href="#i-check"></use></svg> Maska</li>
+						<li><svg><use href="#i-check"></use></svg> Serum</li>
+						<li><svg><use href="#i-check"></use></svg> Krema</li>
 					</ul>
+					<a href="kontakt.html" class="btn btn-outline-dark">Zakaži</a>
+				</div>
 
-					<div class="social-links">
-						<ul class="list-unstyled d-flex justify-content-start justify-content-md-end flex-wrap gap-3">
-							<!-- <li>
-								<a href="#" class="text-secondary">
-									<svg width="24" height="24" viewBox="0 0 24 24">
-										<use xlink:href="#facebook"></use>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="text-secondary">
-									<svg width="24" height="24" viewBox="0 0 24 24">
-										<use xlink:href="#twitter"></use>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="text-secondary">
-									<svg width="24" height="24" viewBox="0 0 24 24">
-										<use xlink:href="#youtube"></use>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="text-secondary">
-									<svg width="24" height="24" viewBox="0 0 24 24">
-										<use xlink:href="#pinterest"></use>
-									</svg>
-								</a>
-							</li> -->
-							<li>
-								<a href="https://www.instagram.com/salonvojin/" class="text-secondary">
-									<svg width="24" height="24" viewBox="0 0 24 24">
-										<use xlink:href="#instagram"></use>
-									</svg>
-								</a>
-							</li>
-						</ul>
+				<div class="package featured">
+					<span class="package-tag">Najtraženiji</span>
+					<h3>Deluxe Detox</h3>
+					<div class="package-price">3.500 <small>rsd</small></div>
+					<p class="package-desc">Zategnite i podignite opuštenu kožu lica i umanjite znakove starenja — bez invazivnih procedura.</p>
+					<ul class="package-list">
+						<li><svg><use href="#i-check"></use></svg> Radiotalasni lifting</li>
+						<li><svg><use href="#i-check"></use></svg> Detox maska</li>
+						<li><svg><use href="#i-check"></use></svg> Serum</li>
+						<li><svg><use href="#i-check"></use></svg> Krema</li>
+					</ul>
+					<a href="kontakt.html" class="btn btn-gold">Zakaži</a>
+				</div>
+
+				<div class="package">
+					<h3>Black Doll</h3>
+					<div class="package-price">4.000 <small>rsd</small></div>
+					<p class="package-desc">Za glatku, čistu i zategnutu kožu i ujednačen ten lica.</p>
+					<ul class="package-list">
+						<li><svg><use href="#i-check"></use></svg> Karbon laserski piling</li>
+						<li><svg><use href="#i-check"></use></svg> Maska za lice</li>
+						<li><svg><use href="#i-check"></use></svg> Serum</li>
+						<li><svg><use href="#i-check"></use></svg> Krema</li>
+					</ul>
+					<a href="kontakt.html" class="btn btn-outline-dark">Zakaži</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ===================== REZULTATI ===================== -->
+	<section class="section section-dark" id="rezultati">
+		<div class="container">
+			<div class="section-head head-row">
+				<div>
+					<span class="eyebrow">Rezultati koji govore</span>
+					<h2 class="section-title">Pre. Posle.<br><span class="italic-gold">Uverite se sami.</span></h2>
+				</div>
+				<a href="kontakt.html" class="btn btn-gold">Pogledaj više rezultata <svg><use href="#i-arrow-right"></use></svg></a>
+			</div>
+
+			<div class="results-grid">
+				<div class="ba">
+					<div class="ba-slider">
+						<img class="ba-before" src="images/ba-before-1.jpg" alt="Pre tretmana">
+						<img class="ba-after" src="images/ba-after-1.jpg" alt="Posle tretmana">
+						<span class="ba-tag before">Pre</span>
+						<span class="ba-tag after">Posle</span>
+						<div class="ba-handle"><span class="ba-knob"><svg><use href="#i-arrow-right"></use></svg></span></div>
 					</div>
+					<div class="ba-label">Pigmentacije</div>
+				</div>
+				<div class="ba">
+					<div class="ba-slider">
+						<img class="ba-before" src="images/ba-before-2.jpg" alt="Pre tretmana">
+						<img class="ba-after" src="images/ba-after-2.jpg" alt="Posle tretmana">
+						<span class="ba-tag before">Pre</span>
+						<span class="ba-tag after">Posle</span>
+						<div class="ba-handle"><span class="ba-knob"><svg><use href="#i-arrow-right"></use></svg></span></div>
+					</div>
+					<div class="ba-label">Bore i fine linije</div>
+				</div>
+				<div class="ba">
+					<div class="ba-slider">
+						<img class="ba-before" src="images/ba-before-3.jpg" alt="Pre tretmana">
+						<img class="ba-after" src="images/ba-after-3.jpg" alt="Posle tretmana">
+						<span class="ba-tag before">Pre</span>
+						<span class="ba-tag after">Posle</span>
+						<div class="ba-handle"><span class="ba-knob"><svg><use href="#i-arrow-right"></use></svg></span></div>
+					</div>
+					<div class="ba-label">Uklanjanje tetovaža</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ===================== ZAŠTO / UTISCI / INSTAGRAM ===================== -->
+	<section class="section trio" id="o-nama">
+		<div class="container">
+			<div class="trio-grid">
+				<!-- Why -->
+				<div>
+					<h3 class="block-title">Zašto Salon Vojin?</h3>
+					<ul class="why-list">
+						<li><svg><use href="#i-check"></use></svg> Preko 20 godina iskustva</li>
+						<li><svg><use href="#i-check"></use></svg> Najmoderniji aparati i tehnologije</li>
+						<li><svg><use href="#i-check"></use></svg> Hiljade zadovoljnih klijenata</li>
+						<li><svg><use href="#i-check"></use></svg> Diskrecija i individualan pristup</li>
+						<li><svg><use href="#i-check"></use></svg> Lokacija u centru Beograda</li>
+						<li><svg><use href="#i-check"></use></svg> Sigurni i efikasni tretmani</li>
+					</ul>
+				</div>
+
+				<!-- Testimonials -->
+				<div class="testimonial">
+					<h3 class="block-title">Šta kažu naši klijenti</h3>
+					<svg class="quote-icon"><use href="#i-quote"></use></svg>
+					<div class="testi-item active">
+						<p class="testi-text">Profesionalnost, ljubaznost i rezultati koji prevazilaze očekivanja. Salon Vojin je već godinama moj jedini izbor.</p>
+						<div class="testi-stars">
+							<svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg>
+						</div>
+						<div class="testi-name">Jelena M.</div>
+					</div>
+					<div class="testi-item">
+						<p class="testi-text">Više od 20 godina pružaju najkvalitetnije kozmetičke tretmane — od tretmana lica do radiotalasnog liftinga i derma pena.</p>
+						<div class="testi-stars">
+							<svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg>
+						</div>
+						<div class="testi-name">Marija P.</div>
+					</div>
+					<div class="testi-item">
+						<p class="testi-text">Svaka usluga je pružena sa pažnjom na detalje i maksimalnom udobnošću. Prijatan ambijent i vrhunska nega.</p>
+						<div class="testi-stars">
+							<svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg>
+						</div>
+						<div class="testi-name">Ana T.</div>
+					</div>
+					<div class="testi-dots" aria-label="Izbor utiska"></div>
+				</div>
+
+				<!-- Instagram -->
+				<div>
+					<h3 class="block-title">Pratite nas na Instagramu</h3>
+					<div class="ig-grid">
+						<a href="https://www.instagram.com/salonvojin/" target="_blank" rel="noopener"><img src="images/ig-1.jpg" alt="Salon Vojin Instagram"></a>
+						<a href="https://www.instagram.com/salonvojin/" target="_blank" rel="noopener"><img src="images/ig-2.jpg" alt="Salon Vojin Instagram"></a>
+						<a href="https://www.instagram.com/salonvojin/" target="_blank" rel="noopener"><img src="images/ig-3.jpg" alt="Salon Vojin Instagram"></a>
+						<a href="https://www.instagram.com/salonvojin/" target="_blank" rel="noopener"><img src="images/ig-4.jpg" alt="Salon Vojin Instagram"></a>
+						<a href="https://www.instagram.com/salonvojin/" target="_blank" rel="noopener"><img src="images/ig-5.jpg" alt="Salon Vojin Instagram"></a>
+						<a href="https://www.instagram.com/salonvojin/" target="_blank" rel="noopener"><img src="images/ig-6.jpg" alt="Salon Vojin Instagram"></a>
+					</div>
+					<a href="https://www.instagram.com/salonvojin/" target="_blank" rel="noopener" class="ig-handle"><svg><use href="#i-instagram"></use></svg> @salonvojin</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ===================== CTA BAND ===================== -->
+	<section class="cta-band">
+		<div class="cta-bg"><img src="images/cta-marble.jpg" alt=""></div>
+		<div class="container">
+			<div class="cta-inner">
+				<div>
+					<h2>Vreme je za <span class="italic-gold">najbolju verziju</span> sebe.</h2>
+					<p class="cta-sub">Zakažite svoj termin već danas i prepustite se rukama našeg stručnog tima.</p>
+				</div>
+				<div class="cta-right">
+					<div class="cta-chips">
+						<div class="cta-chip">
+							<svg><use href="#i-phone"></use></svg>
+							<span><span class="c-label">Telefon</span><br><span class="c-value">+381 63 8989 748</span></span>
+						</div>
+						<div class="cta-chip">
+							<svg><use href="#i-map-pin"></use></svg>
+							<span><span class="c-label">Adresa</span><br><span class="c-value">Koste Abraševića 39/L3, Beograd</span></span>
+						</div>
+						<div class="cta-chip">
+							<svg><use href="#i-clock"></use></svg>
+							<span><span class="c-label">Termini</span><br><span class="c-value">Po dogovoru</span></span>
+						</div>
+					</div>
+					<a href="kontakt.html" class="btn btn-gold">Zakaži termin <svg><use href="#i-calendar"></use></svg></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ===================== FOOTER ===================== -->
+	<footer class="site-footer">
+		<div class="container">
+			<div class="footer-top">
+				<div class="footer-brand">
+					<a href="index.html" class="brand">
+						<svg class="brand-mark" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+							<rect x="1.5" y="1.5" width="57" height="57" rx="15" stroke="#c3a35b" stroke-width="1.3"/>
+							<text x="30" y="39" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="29" font-weight="600" fill="#c3a35b" letter-spacing="1">SV</text>
+						</svg>
+						<span class="brand-text">
+							<span class="brand-name">SALON VOJIN</span>
+							<span class="brand-sub">Salon lepote</span>
+						</span>
+					</a>
+					<p>Salon lepote sa preko 20 godina iskustva u srcu Beograda. Vaša lepota — naša umetnost.</p>
+					<div class="footer-social">
+						<a href="https://www.instagram.com/salonvojin/" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-instagram"></use></svg></a>
+						<a href="https://wa.me/381638989748" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-whatsapp"></use></svg></a>
+						<a href="tel:+381638989748" aria-label="Telefon"><svg><use href="#i-phone"></use></svg></a>
+					</div>
+				</div>
+
+				<div class="footer-col">
+					<h4>Navigacija</h4>
+					<ul>
+						<li><a href="index.html">Početna</a></li>
+						<li><a href="#o-nama">O nama</a></li>
+						<li><a href="#usluge">Usluge</a></li>
+						<li><a href="cenovnik.html">Cenovnik</a></li>
+						<li><a href="#rezultati">Rezultati</a></li>
+						<li><a href="kontakt.html">Kontakt</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-col">
+					<h4>Kontakt</h4>
+					<ul class="footer-contact">
+						<li><svg><use href="#i-map-pin"></use></svg> Koste Abraševića 39/L3, Beograd 11050</li>
+						<li><svg><use href="#i-phone"></use></svg> <a href="tel:+381638989748">+381 63 8989 748</a></li>
+						<li><svg><use href="#i-mail"></use></svg> <a href="mailto:salon.vojin@gmail.com">salon.vojin@gmail.com</a></li>
+						<li><svg><use href="#i-instagram"></use></svg> <a href="https://www.instagram.com/salonvojin/" target="_blank" rel="noopener">@salonvojin</a></li>
+					</ul>
 				</div>
 			</div>
 
-			<div class="border-top py-4">
-				<div class="row">
-					<div class="col-md-6">
-						<p>© Copyright 2024 ASG. All rights reserved.</p>
-					</div>
-					<div class="col-md-6 text-start text-md-end">
-						<p>Website by <a href="https://asgwebagency.com" target="_blank">ASG Webdevelopment</a></p>
-					</div>
-				</div>
+			<div class="footer-bottom">
+				<p>© 2026 Salon Vojin. Sva prava zadržana.</p>
+				<p>Salon lepote &middot; Beograd</p>
 			</div>
-
 		</div>
 	</footer>
 
-	
+	<!-- Floating WhatsApp -->
+	<a href="https://wa.me/381638989748" target="_blank" rel="noopener" class="wa-float" aria-label="Pišite nam na WhatsApp"><svg><use href="#i-whatsapp"></use></svg></a>
 
-	<script src="js/jquery-1.11.0.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-		crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js/plugins.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-
+	<script src="js/salon.js"></script>
 </body>
-
 </html>
