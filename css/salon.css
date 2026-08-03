@@ -531,7 +531,7 @@ h1, h2, h3, h4 {
 /* =====================================================================
    Results / before-after
    ===================================================================== */
-.results-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+.results-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; align-items: start; }
 .ba {
   border-radius: var(--radius);
   overflow: hidden;
@@ -621,6 +621,9 @@ h1, h2, h3, h4 {
   display: block;
 }
 .result-media video { pointer-events: none; }
+/* Show the whole image (its natural square ratio) — no cropping */
+.result-media--full { aspect-ratio: 1 / 1; }
+.result-media--full img { object-fit: contain; }
 .result-badge {
   position: absolute;
   top: 12px;
